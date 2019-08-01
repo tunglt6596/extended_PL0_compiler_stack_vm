@@ -1,0 +1,22 @@
+Program example;
+Var a, b;
+Procedure findPrimeNumbers;
+Var i, j;
+Var r;
+Begin
+	For i := a To b Do
+	Begin
+		If i < 2 Then r := 0 Else 
+		Begin
+			r := 1;
+			For j := 2 to i/2 Do
+				If i % j = 0 Then r := 0;
+			If r = 1 Then Call Writeln(i);
+		End;
+	End;
+End;
+Begin
+	Call Readln(a);
+	Call Readln(b);
+	Call findPrimeNumbers; 
+End.
